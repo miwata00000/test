@@ -1,0 +1,265 @@
+﻿    @charset "utf-8";
+    /*初期化・初期設定（タイポグラフィ）*/
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    ul,
+    ol {
+        list-style: none;
+    }
+    
+    html {
+        font-family: verdana, sans-serif;
+        font-size: 100%;
+        line-height: 1.5;
+    }
+    
+    h1 {
+        font-size: 48px;
+        line-height: 1;
+    }
+    
+    h2 {
+        font-size: 36px;
+        line-height: 1.3333;
+        margin-bottom: 20px;
+    }
+    
+    h3 {
+        font-size: 24px;
+        line-height: 1;
+        color: white;
+        text-align: center;
+    }
+    
+    h4 {
+        color: white;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    p {
+        color: white;
+    }
+    
+    .border {
+        border-bottom: solid 1px white;
+        margin: 20px 0;
+    }
+    
+    header h2,
+    h4,
+    h5,
+    h6 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    img {
+        max-width: 100%
+    }
+    
+    header {
+        text-align: center;
+        padding-top: 24px
+    }
+    
+    header h1 {
+        margin-bottom: 24px
+    }
+    /*ナビ1*/
+    
+    #nav1 nav ul li {
+        width: 25%;
+        float: left
+    }
+    
+    #nav1 nav ul li a {
+        color: white;
+        display: block padding: 12px 0;
+    }
+    
+    #nav1 nav {
+        padding: 10px 0;
+        margin-bottom: 20px;
+        background: linear-gradient(-135deg, #05FBFF, #1E00FF);
+    }
+    
+    #nav1 nav ul {
+        overflow: hidden
+    }
+    
+    #nav1 nav ul li a:hover {
+        color: black;
+        background-color: skyblue;
+    }
+    /*ナビ2*/
+    
+    #nav2 nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: left;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    #nav2 li {
+        display: block;
+        background-color: #05FBFF;
+        padding: 10px;
+        text-decoration: none;
+        color: #fff;
+        margin: 2px 0px;
+        text-align: center
+    }
+    
+    #nav2 .deptitle {
+        display: block;
+        background-color: #1E00FF;
+        padding: 10px;
+        text-decoration: none;
+        color: #fff;
+        margin: 2px 0px;
+        text-align: center;
+    }
+    
+    #nav2 li a {
+        color: #fff;
+        margin-left: 10px;
+        text-align: center;
+    }
+    
+    #nav2 li:hover {
+        background-color: #1E00FF;
+    }
+    
+    #nav2 .deptitle:hover {
+        background-color: #05FBFF;
+    }
+    /*メインコンテンツのコントロール*/
+    
+    #contents {
+        width: 80%;
+        /*コンテンツの横幅をウィンドウの９０％に指定。*/
+        margin: 0 auto;
+        /*コンテンツ左右マージンを自動に設定。（コンテンツのセンター寄せ*/
+    }
+    
+    #contents p {
+        margin-bottom: 24px;
+        /*p 要素に下方マージンを 24ｐｘ設定*/
+        text-align: left;
+        /*テキストを左揃えにする*/
+    }
+    
+    #contents img {
+        margin-bottom: 24px;
+        /*画像の下方マージンを 24ｐｘ設定*/
+    }
+    /*フッターコントロール*/
+    
+    #contebts #main {
+        float: left;
+        width: 60%;
+    }
+    
+    #main {
+        background: #05FBFF;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    footer {
+        color: white;
+        /*文字の色を白に設定*/
+        text-align: center;
+        /*要素をセンター揃え*/
+        padding: 24px 0;
+        /*上下の余白を 24ｐｘ設定*/
+        background-color: #05FBFF;
+        /*背景色を設定*/
+        clear: left;
+    }
+    
+    @media screen and (min-width: 768px) {
+        /* ここに 768px 以上の CSS を記述*/
+        #main {
+            background: white;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 60%;
+            float: left;
+        }
+        h3 {
+            font-size: 24px;
+            line-height: 1;
+            color: #1E00FF;
+            text-align: left;
+        }
+        h4 {
+            color: #1E00FF;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        p {
+            color: black;
+        }
+        .border {
+            border-bottom: solid 1px #1E00FF;
+            margin: 20px 0;
+        }
+        #contents {
+            width: 90%;
+            /*コンテンツの横幅をウィンドウの９０％に指定。*/
+            margin: 0 auto;
+            /*コンテンツ左右マージンを自動に設定。（コンテンツのセンター寄せ*/
+        }
+        #nav2 nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 33%;
+            margin-left: 20px;
+        }
+        #nav2 li {
+            display: block;
+            background-color: #05FBFF;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            margin: 2px 0px;
+            text-align: left;
+        }
+        #nav2 .deptitle {
+            display: block;
+            background-color: #1E00FF;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            margin: 2px 0px;
+            text-align: left;
+        }
+        #nav2 li a {
+            color: #fff;
+            margin-left: 10px;
+            text-align: left;
+        }
+        footer p {
+            color: white;
+            /*文字の色を白に設定*/
+        }
+    }
